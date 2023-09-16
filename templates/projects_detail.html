@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} - {{project.title}}{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <article>
+        <figure>
+         <img src="{{ project.header_image.url }}" class="rounded" alt="{{project.title}}">
+        </figure>
+        <div class="mt-3">
+            <h1>{{project.title}}</h1>
+            <h3>{{project.tagline}}</h3>
+            <p class="text-muted">
+                Begin: {{ project.created_on }} |
+                Finish: {{ project.created_on }} | 
+                Progress: {{ project.progress }}% | 
+                Github: {{ project.github }} | 
+                Budget: {{ project.budget }}
+            </p>
+            <p class="text-muted">
+                Project Manual: {{ project.manuals }} 
+            </p>
+        </div>
+
+        <div class="article-body">
+                {{project.description|safe}}
+        </div>
+        
+    </article>
+</div> 
+
+{% endblock content %}

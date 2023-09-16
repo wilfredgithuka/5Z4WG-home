@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      
+      <p class="lead text-muted">Embeeded Systems | IoT | Low Level C | On this site is a collection of my projects. Some are complete while others require some more time to be done. Bridging the technology gap between my continent and the rest of the world</p>
+      <p>
+        <a href="{% url "weblog:post_list" %}" class="btn btn-primary my-2">LogBook 手册</a>
+        <a href="{% url "projects:projects_list" %}" class="btn btn-secondary my-2">Projects 项目</a>
+        <a href="https://www.youtube.com/channel/UC6YQM7Hkq3UYFnIECfLG1jQ" class="btn btn-secondary my-2">Youtube: @FundiWilly</a>
+        <a href="{% url "about" %}" class="btn btn-secondary my-2">About 关于我</a>
+        <a href="{% url "gnupg" %}" class="btn btn-secondary my-2">GPG Public Key</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/site/wall-e.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> Farmbot: An AIoT-based Independent Farming Robot inspired by the movie character WallE</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/farmbot/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 20% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/site/norcal.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> NorCal-20: A 2001年 20m 5W Transreceiver CW Kit Project. This project kit contains over 300 components for soldering.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/the-norcal-20-cw-kit/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 9% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/site/8.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> 8bit: A programmable 8 bit computer using TTL Logic Chips and Gates inspired by Ben Eater</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/8bit-computer/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 23% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/site/self-hosted-bread.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> Home-Baked-Bread: A project that manages all my self-hosted apps and tools to avoid over-reliance on bigtech.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/home-baked-bread/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 6% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/cv.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> uLtiMaTeDcV: My self-updating CV served in pdf by Latex. Yet another over-engineered cv-pdf thats hard for ATS to analyse.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/ultimate-resume/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 12% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="https://devgithuka.ap-south-1.linodeobjects.com/site/highway.jpg" alt="Card image">
+            <div class="card-body">
+              <p class="card-text"> KeNhERaS: Kenya National Highway Radio Emergency Advisory System. You can tune in on AM 1605Mhz</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://5z4wg.radio/projects/kenheras-kenya-national-highway-radio-emergency-ad/" class="btn btn-sm btn-outline-secondary ">View More</a>
+                </div>
+                <small class="text-muted">Progress: 16% Complete</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
